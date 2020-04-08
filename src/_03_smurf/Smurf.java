@@ -21,6 +21,7 @@ public class Smurf {
 	}
 
 	public String getName() {
+		System.out.println("My name is " + name + " Smurf.");
 		return "My name is " + name + " Smurf.";
 	}
 
@@ -31,12 +32,24 @@ public class Smurf {
 	/* Papa Smurf wears a red hat, all the others are white. */
 	public String getHatColor() {
 		// 3. Fill in this method
+		if (name.equalsIgnoreCase("Papa")) {
+			System.out.println(name + " Smurf has a red hat.");
+		}
+		else {
+			System.out.println(name + " Smurf has a white hat.");
+		}
 		return "";
 	}
 
 	/* Smurfette is the only female Smurf. */
 	public String isGirlOrBoy() {
 		// 4. Fill in this method
+		if (name.equalsIgnoreCase("Smurfette")) {
+			System.out.println(name + " is a girl.");
+		}
+		else {
+			System.out.println(name + " Smurf is a boy.");
+		}
 		return "";
 	}
 
